@@ -37,7 +37,9 @@ def flavor(msg):
 
     An event's flavor is determined by the single top-level key.
     """
-    if 'message_id' in msg:
+    if type(msg) == int:
+        return 'chat'
+    elif 'message_id' in msg:
         return 'chat'
     elif 'id' in msg and 'chat_instance' in msg:
         return 'callback_query'
