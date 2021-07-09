@@ -51,7 +51,7 @@ with open(path.join(here, 'telepot', '__init__.py')) as f:
 setup(
     cmdclass=cmdclass,
 
-    name='telepot',
+    name='telepot-x',
     packages=['telepot', 'telepot.aio'],
     # Do not filter out packages because we need the whole thing during `sdist`.
 
@@ -61,12 +61,12 @@ setup(
 
     description='Python framework for Telegram Bot API',
 
-    long_description='',
+    long_description='On the basis of telepot, we have updated and fixed some errors. Since the original version has not been updated for a long time and does not accept updates, a new version of telepot-x ​​has been released. If you have installed telepot, it cannot be used. Please uninstall telepot. Use later',
 
-    url='https://github.com/nickoala/telepot',
+    url='https://github.com/cpcchengt/telepot',
 
-    author='Nick Lee',
-    author_email='lee1nick@yahoo.ca',
+    author='cpcchengt',
+    author_email='chengt@cpchain.io',
 
     license='MIT',
 
@@ -88,6 +88,9 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
 
     keywords='telegram bot api python wrapper',
